@@ -43,10 +43,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5% 15%;
+    gap: 82px;
 }
 
 .main__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -67,10 +68,6 @@ body {
     color: var(--tertiary-color);
 }
 
-.profile_image {
-    border-radius: 10px;
-}
-
 .home__links {
     display: flex;
     flex-direction: column;
@@ -85,13 +82,13 @@ body {
     font-size: 1.5rem;
 }
 
-.home__links__link {
+.home__links__button {
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--tertiary-color);
     border-radius: 8px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0;
     text-decoration: none;
@@ -103,6 +100,11 @@ body {
 
 .home__links__link:hover {
     background-color: var(--hover-color);
+}
+
+.profile_image {
+    border-radius: 10px;
+    width: 50%;
 }
 
 .defalt__footer {
