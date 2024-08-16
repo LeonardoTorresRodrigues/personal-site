@@ -32,7 +32,7 @@ body {
 
 .header__menu__link {
     font-family: var(--secondary-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -43,32 +43,29 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5% 15%;
+    gap: 82px;
 }
 
 .main__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .main__content__title {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-family: var(--primary-font);
 }
 
 .main__content__text, .main__content__stack {
     font-family: var(--secondary-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .main__content__stack {
     color: var(--tertiary-color);
-}
-
-.profile_image {
-    border-radius: 10px;
 }
 
 .home__links {
@@ -82,27 +79,32 @@ body {
 .home__links__subtitle {
     font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.home__links__link {
+.home__links__button {
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--tertiary-color);
     border-radius: 8px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0;
     text-decoration: none;
     color: #F6F6F6;
     font-family:  var(--secondary-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .home__links__link:hover {
     background-color: var(--hover-color);
+}
+
+.profile_image {
+    border-radius: 10px;
+    width: 50%;
 }
 
 .defalt__footer {
@@ -111,6 +113,20 @@ body {
     padding: 24px;
     text-align: center;
     font-family: var(--secondary-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .default__header {
+        padding: 10%;
+    }
+
+    .default__header__menu {
+        justify-content: center;
+    }
+
+    .default__main {
+        flex-direction: column-reverse;
+    }
 }
