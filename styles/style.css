@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --primary-color: #000000;
+    --secondary-color: #F6F6F6;
+    --tertiary-color: #22D4FD;
+    --hover-color: #272727;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +14,8 @@
 
 body {
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .default__header {
@@ -24,7 +31,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
@@ -54,7 +61,7 @@ body {
 }
 
 .main__content__stack {
-    color: #22D4FD;
+    color: var(--tertiary-color);
 }
 
 .profile_image {
@@ -79,7 +86,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--tertiary-color);
     border-radius: 8px;
     width: 378px;
     text-align: center;
@@ -92,12 +99,12 @@ body {
 }
 
 .home__links__link:hover {
-    background-color: #272727;
+    background-color: var(--hover-color);
 }
 
 .defalt__footer {
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
     padding: 24px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
