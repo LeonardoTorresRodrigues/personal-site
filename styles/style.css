@@ -116,3 +116,17 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+@media (max-width: 1200px) {
+    .default__header {
+        padding: 10%;
+    }
+
+    .default__header__menu {
+        justify-content: center;
+    }
+
+    .default__main {
+        flex-direction: column-reverse;
+    }
+}
