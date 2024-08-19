@@ -128,5 +128,10 @@ body {
 
     .default__main {
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .main__content {
+        width: auto;
     }
 }
